@@ -5,8 +5,9 @@ namespace RpsConsole2
     class Program
     {
         static void Main(string[] args) {
-
+/**
         Random random = new Random();
+        bool playAgain = true;
 
         // Welcome   
         Console.WriteLine("Welcome to your favorite game, Rock-Paper-Scissors!");
@@ -24,19 +25,21 @@ namespace RpsConsole2
         player1Name = Console.ReadLine();
         Console.WriteLine($"\nWelcome to Rock-Paper-Scissors, {player1Name}!");
 
-        //get the users choice
-        Console.WriteLine("Please enter... \n\t 1 for Rock.\n\t 2 for Paper.\n\t 3 for Scissors.");
-        int player1Choice = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(player1Choice);
+/**
+        //Start Loop
+        while (playAgain == true) {
+            //get the users choice
+            Console.WriteLine("Please enter... \n\t 1 for Rock.\n\t 2 for Paper.\n\t 3 for Scissors.");
+            int player1Choice = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(player1Choice);
 
-        
-        
-        int computerChoice = random.Next(1,4);
-         Console.WriteLine(computerChoice);
-        
+            //get computer choice
+            int computerChoice = random.Next(1,4);
+            Console.WriteLine(computerChoice);
 
-     
+            playAgain == false;
 
+        } 
         //computerChoice = random.Next(1,4);
         //computerChoice = (rand.Next(1000) % 3) + 1;
         //Console.WriteLine(computerChoice);
@@ -45,7 +48,7 @@ namespace RpsConsole2
 
 
         //Evaluate the choices to determien the winner of the round.
-    
+    **/
         }
 
     }
