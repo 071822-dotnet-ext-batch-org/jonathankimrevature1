@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
-namespace RpsConsole2
+namespace consoleapps
 {
-    class Program
+    class rps
     {
         static void Main(string[] args) {
 /**
