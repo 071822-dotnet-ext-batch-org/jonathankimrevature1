@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net5.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\jason\\.nuget\\packages\\": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\consoleapps\\consoleapps.csproj",
-      "projectName": "consoleapps",
-      "projectPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\consoleapps\\consoleapps.csproj",
+      "projectUniqueName": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\RpsConsole2\\RpsConsole2.csproj",
+      "projectName": "RpsConsole2",
+      "projectPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\RpsConsole2\\RpsConsole2.csproj",
       "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\consoleapps\\obj\\",
+      "outputPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\RpsConsole2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net5.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -41,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "imports": [
           "net461",
           "net462",
