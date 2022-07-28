@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\consoleapps\\consoleapps.csproj": {}
+    "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\codingChallenges\\1_Strings\\1_Strings\\Strings\\Strings.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\consoleapps\\consoleapps.csproj": {
+    "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\codingChallenges\\1_Strings\\1_Strings\\Strings\\Strings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\consoleapps\\consoleapps.csproj",
-        "projectName": "consoleapps",
-        "projectPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\consoleapps\\consoleapps.csproj",
+        "projectUniqueName": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\codingChallenges\\1_Strings\\1_Strings\\Strings\\Strings.csproj",
+        "projectName": "Strings",
+        "projectPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\codingChallenges\\1_Strings\\1_Strings\\Strings\\Strings.csproj",
         "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\consoleapps\\obj\\",
+        "outputPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\codingChallenges\\1_Strings\\1_Strings\\Strings\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config"

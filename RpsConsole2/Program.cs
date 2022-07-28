@@ -4,6 +4,7 @@ namespace RpsConsole2
 {
     class Program
     {
+<<<<<<< HEAD
         static void Main(string[] args) 
         {   
             //Declare variables
@@ -138,10 +139,46 @@ namespace RpsConsole2
 
             }        
         }
+=======
+        static void Main(string[] args) {
+
+        Random random = new Random();
+
+        // Welcome   
+        Console.WriteLine("Welcome to your favorite game, Rock-Paper-Scissors!");
+
+        string player1Name = "";
+        string computerName = "";
+        //int player1Choice = 0;
+        //int computerChoice = 0;
+        int player1wins = 0;
+        int computerWins = 0;
+        int numberOfTies = 0;
+        
+        //Get user name
+        Console.WriteLine("What is your name?");
+        player1Name = Console.ReadLine();
+        Console.WriteLine($"\nWelcome to Rock-Paper-Scissors, {player1Name}!");
+
+        //get the users choice
+        Console.WriteLine("Please enter... \n\t 1 for Rock.\n\t 2 for Paper.\n\t 3 for Scissors.");
+        int player1Choice = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(player1Choice);
+
+        
+        
+        int computerChoice = random.Next(1,4);
+         Console.WriteLine(computerChoice);
+        
+
+     
+
+>>>>>>> fcf627da22537b994945e3353d6df14dbe36981f
         //computerChoice = random.Next(1,4);
         //computerChoice = (rand.Next(1000) % 3) + 1;
         //Console.WriteLine(computerChoice);
         
+<<<<<<< HEAD
         /**
             // Welcome message...
             Console.WriteLine("\t\tWelcome to you favorite game!\n\t\tThis is Rock-Paper Scissors!\n");
@@ -284,3 +321,14 @@ namespace RpsConsole2
 // {
 //     Console.WriteLine("The parse method failed because {0}", ex.Message);// This is Composite Formatting.
 // }
+=======
+        
+
+
+        //Evaluate the choices to determien the winner of the round.
+    
+        }
+
+    }
+}
+>>>>>>> fcf627da22537b994945e3353d6df14dbe36981f

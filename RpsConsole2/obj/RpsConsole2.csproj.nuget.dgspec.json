@@ -17,14 +17,23 @@
           "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
+<<<<<<< HEAD
           "net6.0"
+=======
+          "net5.0"
+>>>>>>> fcf627da22537b994945e3353d6df14dbe36981f
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+<<<<<<< HEAD
           "net6.0": {
             "targetAlias": "net6.0",
+=======
+          "net5.0": {
+            "targetAlias": "net5.0",
+>>>>>>> fcf627da22537b994945e3353d6df14dbe36981f
             "projectReferences": {}
           }
         },
@@ -35,8 +44,13 @@
         }
       },
       "frameworks": {
+<<<<<<< HEAD
         "net6.0": {
           "targetAlias": "net6.0",
+=======
+        "net5.0": {
+          "targetAlias": "net5.0",
+>>>>>>> fcf627da22537b994945e3353d6df14dbe36981f
           "imports": [
             "net461",
             "net462",

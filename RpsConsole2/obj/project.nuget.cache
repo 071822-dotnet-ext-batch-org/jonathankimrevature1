@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "8QS8rumhOVtWElCkSkXbMaV3YLBorzyrDMC8dX6verzq93SkhQgfGtidB1o/sRlCLQ4B4Ufl7UQRNtl2QR5sgA==",
+=======
+  "dgSpecHash": "cf+zmHnhrsfbB3uQ1O+Xzy40aW2bGX3+G+Vk0Dvu4HWL62huW2NPXHP61QmxphNvAhQpw1Xg1Uz8tbC1LPeWOw==",
+>>>>>>> fcf627da22537b994945e3353d6df14dbe36981f
   "success": true,
   "projectFilePath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\RpsConsole2\\RpsConsole2.csproj",
   "expectedPackageFiles": [],
