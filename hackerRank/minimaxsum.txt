@@ -1,0 +1,8 @@
+int max = 0;
+int min = 0;
+int sum = arr.Sum();
+        
+max = sum - arr.Min();
+min = sum - arr.Max();
+        
+Console.WriteLine(min + " " + max);
