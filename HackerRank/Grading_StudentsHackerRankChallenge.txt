@@ -1,0 +1,14 @@
+List<int> finalScores = new List<int>();
+        
+        foreach (int n in grades)
+        {
+            if (n >= 38 && n % 5 >= 3)
+            {
+                finalScores.Add(n + (5 - (n % 5)));
+            }
+            else
+            {
+                finalScores.Add(n);
+            }
+        }
+        return finalScores;
