@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace consoleapps
 {
@@ -6,7 +6,10 @@ namespace consoleapps
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("This Hello World is altered!");
+            var arr = new List<ServiceCode>();
+
+            var c = new ServiceCode
+
         }
     }
 }
