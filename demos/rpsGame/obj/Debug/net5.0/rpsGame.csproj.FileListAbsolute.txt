@@ -1,0 +1,16 @@
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\bin\Debug\net5.0\rpsGame.exe
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\bin\Debug\net5.0\rpsGame.deps.json
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\bin\Debug\net5.0\rpsGame.runtimeconfig.json
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\bin\Debug\net5.0\rpsGame.runtimeconfig.dev.json
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\bin\Debug\net5.0\rpsGame.dll
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\bin\Debug\net5.0\rpsGame.pdb
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\rpsGame.csproj.AssemblyReference.cache
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\rpsGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\rpsGame.AssemblyInfoInputs.cache
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\rpsGame.AssemblyInfo.cs
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\rpsGame.csproj.CoreCompileInputs.cache
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\rpsGame.dll
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\refint\rpsGame.dll
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\rpsGame.pdb
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\rpsGame.genruntimeconfig.cache
+C:\Users\jason\OneDrive\Desktop\Jonathan Kim\Revature\jonathankimrevature1\rpsGame\obj\Debug\net5.0\ref\rpsGame.dll
