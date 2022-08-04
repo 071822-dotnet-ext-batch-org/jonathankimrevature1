@@ -1,8 +1,19 @@
-int max = 0;
-int min = 0;
-int sum = arr.Sum();
+class Result
+{
+	public static void miniMaxSum(List<int> arr)
+	{
+		//Declare counters
+		int max = 0;
+		int min = 0;
+		
+		//Add up all values in the array arr
+		int sum = arr.Sum();
         
-max = sum - arr.Min();
-min = sum - arr.Max();
-        
-Console.WriteLine(min + " " + max);
+		//Logic to calculate max and min
+		max = sum - arr.Min();
+		min = sum - arr.Max();
+        	
+		//Output HackerRank solution
+		Console.WriteLine(min + " " + max);
+	}
+}
