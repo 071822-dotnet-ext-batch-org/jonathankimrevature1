@@ -1,0 +1,18 @@
+class Result
+{
+    public static int hurdleRace(int k, List<int> height)
+    {
+        int heightMax = height.Max();
+        int numPotions = 0;
+
+        if (heightMax > k)
+        {
+            numPotions = heightMax - k;
+            return numPotions;
+        }
+        else
+        {
+            return numPotions;
+        }
+    }
+}
