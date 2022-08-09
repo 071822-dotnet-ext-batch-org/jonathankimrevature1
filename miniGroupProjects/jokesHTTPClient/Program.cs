@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace MyApplication
+namespace jokesHTTPClient
 {
     class Program
     {
