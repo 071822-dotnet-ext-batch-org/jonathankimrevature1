@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ersProject
+namespace ErsConsole
 {
     class Program
     {
