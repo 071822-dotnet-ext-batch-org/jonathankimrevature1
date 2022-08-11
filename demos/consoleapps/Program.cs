@@ -8,38 +8,22 @@ namespace MyApplication
 {
     class Program
     {
-        //Create Http client object
-        HttpClient client = new HttpClient();
-        
-        // Method must be async if we want to wait for it to finish
-        //In order to await it the method must be async
-        //Task because it can not return void, for some reason
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
-            //Access 
-            Program program = new Program();
-            await program.GetJokes();
+            using(var source = new HttpClient())
+            {
+                var endpoint = new Uri("http://api.icndb.com/jokes/random"); //assigned source url to variable endpoint
+                var endpoint2 = new Uri("http://api.icndb.com/jokes/random?limitTo=[nerdy]");
+                var result = source.GetAsync(endpoint).Result; //output the results from the endpoint
+                var result2 = source.GetAsync(endpoint2).Result;
+                var json = result.Content.ReadAsStringAsync().Result; //converted the result to json
+                var json2 = result2.Content.ReadAsStringAsync().Result;
+                Console.WriteLine(json); //prints json script
+                Console.WriteLine();//make a space
+                Console.WriteLine(json2);
+            }
 
-        }         
-        //In order to await it the method must be async
-        //await is used to wait for it finish
-        private async Task GetJokes()
-        {
-            //Our response will be parsed into a string
-            string response = await client.GetStringAsync(
-                "http://api.icndb.com/jokes/15?firstName=Tony&lastName=Stark");
+        }   
 
-            string response2 = await client.GetStringAsync(
-                "http://api.icndb.com/jokes/random/3?firstName=Mark&lastName=Moore");
-
-            
-            //output both links
-            Console.WriteLine(response);
-            Console.WriteLine("");
-            Console.WriteLine(response2);
-        }
-
-
-
-    }                       
+    }                      
 }
