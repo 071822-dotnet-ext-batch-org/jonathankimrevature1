@@ -1,0 +1,31 @@
+class Result
+{
+	public static void countApplesAndOranges(int s, int t, int a, int b, List<int> apples, List<int> oranges)
+	{
+		//Inititalize counters
+		int countApple = 0;
+    		int countOrange = 0;
+    	
+		//Calculate for apples
+    		foreach (int d in apples)
+    		{
+        		if (a + d >= s && a + d <= t)
+       			{
+            			countApple++;
+        		}
+    		}
+        
+		//Calculate for oranges    
+    		foreach (int d in oranges)
+    		{
+        		if (b + d >= s && b + d <= t)
+        		{
+            		countOrange++;
+        		}
+    		}
+    	
+		//Output HackerRank solution
+    		Console.WriteLine(countApple);
+    		Console.WriteLine(countOrange);
+	}
+}
