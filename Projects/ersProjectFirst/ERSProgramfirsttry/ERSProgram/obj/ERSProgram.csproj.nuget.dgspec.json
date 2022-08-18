@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProject\\ERSProgram\\ERSProgram\\ERSProgram.csproj": {}
+    "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProjectFirst\\ERSProgramfirsttry\\ERSProgram\\ERSProgram.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProject\\ERSProgram\\ERSProgram\\ERSProgram.csproj": {
+    "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProjectFirst\\ERSProgramfirsttry\\ERSProgram\\ERSProgram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProject\\ERSProgram\\ERSProgram\\ERSProgram.csproj",
+        "projectUniqueName": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProjectFirst\\ERSProgramfirsttry\\ERSProgram\\ERSProgram.csproj",
         "projectName": "ERSProgram",
-        "projectPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProject\\ERSProgram\\ERSProgram\\ERSProgram.csproj",
+        "projectPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProjectFirst\\ERSProgramfirsttry\\ERSProgram\\ERSProgram.csproj",
         "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProject\\ERSProgram\\ERSProgram\\obj\\",
+        "outputPath": "C:\\Users\\jason\\OneDrive\\Desktop\\Jonathan Kim\\Revature\\jonathankimrevature1\\Projects\\ersProjectFirst\\ERSProgramfirsttry\\ERSProgram\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",

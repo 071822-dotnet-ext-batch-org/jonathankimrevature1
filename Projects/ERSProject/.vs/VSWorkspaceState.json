@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\ERSProject",
-    "\\ERSProject\\ErsWebApi"
+    "\\ERSProject\\ErsWebApi",
+    "\\ERSProject\\RepoLayer"
   ],
+  "SelectedNode": "\\ERSProject\\RepoLayer\\SQLCommands.cs",
   "PreviewInSolutionExplorer": false
 }
