@@ -10,36 +10,85 @@ namespace ApiLayer.Controllers
     [ApiController]
     public class ersControllers : ControllerBase
     {
-        //Use ersBusinessLayer from BusinessLayer and create _businessLayer
-        // The _ is naming convention for private local variables
-        // This is the instance of the business layer to call this._businessLayer.TicketsAsync(type)
-        //_businessLayer here is a class object that's instantiated by this controller
         private readonly ersBusinessLayer _businessLayer;
-       
-        public ersControllers()
+        public ersControllers()//Constructor for ersControllers
         {
             this._businessLayer = new ersBusinessLayer();
         }
 
-        //These are optional request parameters in the header in Swagger
-        //These are the action methods in ApiLayer
-        //There is a "route" way of doing it but Mark likes it like this
-        //? means optional, without it, these are all required
-        [HttpGet("TicketsAsync")]//get all tickets
-        [HttpGet("TicketsAsync/{type}")]//get all of a certain type of tickets
-        //[HttpGet("TicketsAsync/{id}/{type?}")]//get all OR a specific id AND type. Figure out how to strucure the query so that the optional values are indeed optional
-        //[HttpGet("TicketssAsync/{id}")]//get all of a specific employees tickets
 
-        
-        //Gives you a Task of ActionResult that gives you a list of the type "Ticket" (from ModelsLayer)
-        //Call it by using the newly created method, TicketsAsync()
-        public async Task<ActionResult<List<Ticket>>> TicketsAsync(int type, Guid? id)
+
+        [HttpPost("Login")]
+        public async Task<ActionResult> LoginAsync(string Username, string Password)
         {
-            //Create ticketList
-            List<Ticket> ticketList = await this._businessLayer.TicketsAsync(type);//Same list from ersRepoLayer travelled repo -> business -> controllers. That whole thing was called here in this empty list.
-            return Ok(ticketList); //Returns entire list to the caller in swagger //returns 200, http status code
 
-            return null;
+            bool SuccessfullLogin = await this._businessLayer.LoginAsync(Username, Password);
+            return Ok(SuccessfullLogin);
+        }
+
+
+
+        [HttpPost("RegisterUser")]
+        public async Task<ActionResult> RegisterUserAsync(Guid EmployeeID, string FirstName, string LastName, string Username, string Password)
+        {
+            bool SuccessfullyRegistered = await this._businessLayer.RegisterUserAsync(EmployeeID, FirstName, LastName, Username, Password);
+            return Ok(SuccessfullyRegistered);
+        }
+
+
+
+        [HttpPost("SubmitTicket")]
+        public async Task<ActionResult> SubmitTicketAsync(Guid TicketID, Guid fK_Employee, string Description, decimal Amount)
+        {
+            bool SuccessfullySubmited = await this._businessLayer.SubmitTicketAsync(TicketID, fK_Employee, Description, Amount);
+            return Ok(SuccessfullySubmited);
+        }
+
+
+
+        [HttpPut("UpdateTicket")]
+        public async Task<ActionResult<UpdatedTicketDTO>> JimmyAsync(ApprovalDTO approval) //JimmyAsync() is just a name for the method, it can be whatever you want. 
+        {
+            //Model binding matches body of request to the type of model we say we need.
+            //ModelState is built in
+            if (ModelState.IsValid)
+            {
+                //send ApprovalDTO to business layer
+                UpdatedTicketDTO approvedRequest = await this._businessLayer.UpdateTicketAsync(approval);
+                return Ok(approvedRequest);
+            }
+            else return Conflict(approval); //shows status code
+        }
+
+
+
+        [HttpGet("GetTickets")]
+        public async Task<List<Ticket>> GetAllTicketsAsync(int Status)
+        {
+            List<Ticket> list = await this._businessLayer.GetAllTicketsAsync(Status);
+            return list;
+        }
+
+
+        //Used to ensure username was not already registered
+        [HttpGet("DoesUsernameAlreadyExist")]
+        public async Task<ActionResult> DoesUsernameAlreadyExistAsync(string Username)
+        {
+            bool DoesExist = await this._businessLayer.DoesUsernameAlreadyExistAsync(Username);
+            return Ok(DoesExist);
+        }
+
+
+        //Used so tickets cannot change status after processing
+        [HttpGet("IsItAlreadyProcessed")]
+        public async Task<ActionResult> IsItAlreadyProcessedAsync(Guid TicketID)
+        {
+            bool IsItProcessed = await this._businessLayer.IsitAlreadyProcessedAsync(TicketID);
+            return Ok(IsItProcessed);
         }
     }
 }
+
+
+
+
