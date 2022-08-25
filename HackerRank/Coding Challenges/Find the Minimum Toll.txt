@@ -1,0 +1,23 @@
+static void Main(string[] args)
+        {
+            int [] cityID = {13,6,78,3,88,91,32,11};
+            Array.Sort(cityID);
+
+
+            int tempResult = 0;
+            int minToll = 0;
+            for (int i = 0; i < cityID.Length;i++)
+            {
+                if(i==0)
+                {
+                    continue;
+                }
+                else
+                {
+                    tempResult = cityID[i] - cityID[i-1];
+                    minToll = minToll + tempResult;
+                }
+                
+            }
+            Console.WriteLine(minToll);
+        }
