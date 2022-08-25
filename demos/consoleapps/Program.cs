@@ -10,6 +10,11 @@ namespace MyApplication
     {
         static void Main(string[] args)
         {
+
+            
+
+
+            /**
             using(var source = new HttpClient())
             {
                 var endpoint = new Uri("http://api.icndb.com/jokes/random"); //assigned source url to variable endpoint
@@ -21,7 +26,7 @@ namespace MyApplication
                 Console.WriteLine(json); //prints json script
                 Console.WriteLine();//make a space
                 Console.WriteLine(json2);
-            }
+            }**/
 
         }   
 
