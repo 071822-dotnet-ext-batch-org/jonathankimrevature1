@@ -1,0 +1,72 @@
+//2 solutions:
+
+//Solution 1:
+
+public class Solution {
+    public ListNode MiddleNode(ListNode head) {
+        
+        List<ListNode> newList = new List<ListNode>();
+        
+        while(head != null) {
+            newList.Add(head);
+            head = head.next;
+        }
+        return newList[newList.Count / 2];
+    }
+}
+
+/**
+1. So when you output an index of a linked list, it outputs
+   that index and all of the remaining indexes.
+2. "null" is not the last index, it is what is after the last one.
+3. "next" is literally the next index. 
+   "head.next" for {1,2,3,4,5} outputs "{2,3,4,5}. 
+   "head.next.next" outputs {3,4,5}
+4. "head" is the first index, so index 0. 
+   We removed the first head, then moved the head to "head.next"
+5. We took out the values from "ListNode head" and added to "newList".
+   "return head" gives you "[]" because we emptied it out and moved it.
+   I'm not sure if that's how it works in normal lists but it works
+   like this for Linked Lists.
+6. Also, you need to use brackets for "List<ListNode>" types or whatever
+   to call on a specific index. EDIT: yea no shit you use [] to get an index of a list.
+**/
+
+
+//Solution 2:
+
+public class Solution {
+    public ListNode MiddleNode(ListNode head) {
+        ListNode middle = head;
+        ListNode end = head;
+        
+        while(end != null && end.next != null) {
+            middle = middle.next;
+            end = end.next.next;
+        }
+        return middle;
+    }
+}
+
+/**
+1. Problem with Solution 1, copying linkedlist to another array
+   defeats the purpose of a linkedlist
+2. Solution 2 bascially treats it as a graph problem. Slope is -2
+   1
+   1-2
+   1-2-3
+   1-2-3-4
+   1-2-3-4-5
+   1-2-3-4-5-6
+   1-2-3-4-5-6-7
+   "middle" moves up the index by 1.
+   "end" moves up the index by 2.
+3. "end != null &&" is for evens
+   "end.next != null" is for odds
+   EDIT for 1-2-3-4 ".next" does not stop at the last index (4), it keeps going to null. so 1-2-3-4-null(end=null here)
+4. Don't know how && works. I get why || won't work. I just do not understand how && works for odds
+   because 1-2-3-4-5, 5 is the end. end.next is null. but end is not null, end is 5?
+   EDIT I am very stupid. if one argument in && breaks it stops. You had it the other way around.
+   I was thinking both arguments of && needs to be null for it to stop. It's, both arguments of && needs to be true to keep going.
+   So dumb, you did a similar "duh" mistake with solution 1 why list indexed with []. like duh.
+**/
