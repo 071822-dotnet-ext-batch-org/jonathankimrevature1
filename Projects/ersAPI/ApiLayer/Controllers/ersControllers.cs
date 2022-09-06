@@ -65,8 +65,8 @@ namespace ApiLayer.Controllers
         [HttpGet("GetTickets")]
         public async Task<List<Ticket>> GetAllTicketsAsync(int Status)
         {
-            List<Ticket> list = await this._businessLayer.GetAllTicketsAsync(Status);
-            return list;
+            List<Ticket> tlist = await this._businessLayer.GetAllTicketsAsync(Status);
+            return tlist;
         }
 
 

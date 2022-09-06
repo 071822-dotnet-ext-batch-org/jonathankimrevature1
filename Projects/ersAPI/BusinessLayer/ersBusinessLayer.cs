@@ -51,8 +51,8 @@ namespace BusinessLayer
 
         public async Task<List<Ticket>> GetAllTicketsAsync(int Status)
         {
-            List<Ticket> list = await this._repoLayer.GetAllTicketsAsync(Status);
-            return list;
+            List<Ticket> tlist = await this._repoLayer.GetAllTicketsAsync(Status);
+            return tlist;
         }
 
 
