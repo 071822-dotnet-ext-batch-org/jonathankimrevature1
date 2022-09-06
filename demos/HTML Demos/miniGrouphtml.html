@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Mini Group HTML Project </title>
+    <link rel ="stylesheet" href="miniGrouphtmlcss.css" />
+    <style>
+        #div1
+        {
+            border:3px solid gold;
+            width:300px;
+            height: 600px;
+            padding: 5px;
+        }
+        #div2
+        {
+            border:3px solid gold;
+            width:300px;
+            height:400px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<div id ="content">
+    <div id="div1">
+        <body>
+            <img src="html5logo.png" alt="Image can't be found"> <br>
+        
+            <h1>About</h1>
+            Some text about this website<br>
+            <h2>Our Locations</h2>
+        
+            <ul>
+                <li>USA</li>
+                <ul>    
+                    <li><a href="https://en.wikipedia.org/wiki/New_York_City" target="_blank">New York</a> </li>
+                    <li><a href="https://en.wikipedia.org/wiki/Columbus,_Ohio" target="_blank">Columbus</a> </li>
+                    <li><a href="https://en.wikipedia.org/wiki/Austin,_Texas" target="_blank">Austin</a> </li>
+                    <li><a href="https://en.wikipedia.org/wiki/Philadelphia" target="_blank">Philly</a> </li>
+                </ul>
+                <li>WORLD</li>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Ottawa" target="_blank">Ottawa</a> </li>
+                    <li><a href="https://en.wikipedia.org/wiki/Sydney" target="_blank">Sydney</a> </li>
+                </ul>
+            </ul>
+        
+            <h2>Upcoming Classes</h2>
+            <table border="1">
+                <thead>
+                    <th class = "thead1-class" style="width: 100px;">Location</th>
+                    <th>Topic</th>
+                </thead>
+                <tbody class="1st row">
+                    <tr style="width: 60px;">
+                        <td style="text-align: center;">New York</td>
+                        <td style="text-align: center;">Javascript & Query</td>
+                    </tr>
+                    <tr style="width: 60px;">
+                        <td style="text-align: center;">San Francisco</td>
+                        <td style="text-align: center;">HTML & CSS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </div>
+    <div id="div2">
+        <body>
+            <font size="+2"><b>Sign up!</b></font>
+            <form action="" method="get"><br>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" placeholder="First Name" class="fnameClass"><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="" placeholder="Your Email" class="emailClass"><br>
+                
+                <label for="Ulocation">Location:</label>
+                <select name="Ulocation" id="">
+                    <option value="0" selected>--Pick Location--</option>
+                    <option value="1">New York</option>
+                    <option value="2" >San Francisco</option>
+                </select><br>
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" >Female
+                <input type="radio" >Male
+            </fieldset>       
+                <label for="experiencetxt">Experience:</label><br>
+                <textarea name="message" placeholder="Write your experience here:" id="experiencetxt" cols="37" rows="10"></textarea> <br>
+                <button type="signup">Sign Up</button>
+            </form><br>
+            <a href="https://twitter.com/" target="_blank">Twitter</a> | <a href="https://www.facebook.com/" target="_blank">FaceBook</a> | <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </body>
+    </div>
+</div>
+</html>

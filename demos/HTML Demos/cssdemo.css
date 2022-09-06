@@ -1,0 +1,51 @@
+p{
+    color: blueviolet;
+}
+
+.h1-class {
+    background-color: greenyellow;
+    width: 200px;
+}
+
+.h1-class2 {
+    background-color: greenyellow;
+    width: 200px;
+    border: solid brown;
+    border-color: 5px 10px 15px 20px;
+    border-width: 5px 10px 15px 20px;
+    /* border-right: 100px; */
+}
+
+.h2-class{
+    background-color: azure;
+    border: solid brown;
+}
+
+#h3-id {
+    background-color: bisque;
+}
+
+ul{
+    background-color: aqua;
+}
+
+ul #ulli {
+    background-color: #f31818;
+}
+
+body {
+    background-color: bisque;
+}
+
+h5, h1{
+    border: spotted black;
+    border-width: 5px;
+}
+
+ol.oli {
+    font-size: 40px;
+}
+
+ol .oli1 {
+    font-size: 10px;
+}

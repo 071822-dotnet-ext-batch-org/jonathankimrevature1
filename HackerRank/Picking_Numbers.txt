@@ -1,0 +1,69 @@
+    public static int pickingNumbers(List<int> values)
+    {
+        int modeElement = 0;
+        int modeCount = 0;
+        
+        for (int i=0;i<values.Count();i++)
+        {
+            int tempmodeElement = values[i];
+            int tempmodeCount = 0;
+            for (int p=0;p<values.Count();p++)
+                if(values[p]==tempmodeElement)
+                    tempmodeCount++;
+            if (tempmodeCount>modeCount)
+            {
+                modeElement = tempmodeElement;
+                modeCount = tempmodeCount;
+            }
+        }
+        
+        
+        int plusOne = modeElement + 1;
+        int plusOneCount = 0;
+        foreach (int n in values)
+        {
+            if (n == plusOne)
+            {
+                plusOneCount++;
+            }
+        }
+        int minusOne = modeElement - 1;
+        int minusOneCount = 0;
+        foreach (int n in values)
+        {
+            if (n == minusOne)
+            {
+                minusOneCount++;
+            }
+        }
+        
+        
+        int modeTwo = 0;
+        int modeThree = 0;
+        
+        if(plusOneCount > minusOneCount)
+        {
+            modeTwo = plusOne;
+        }
+        if(minusOneCount > plusOneCount)
+        {
+            modeTwo = minusOne;
+        }
+        if(plusOneCount == minusOneCount)
+        {
+            modeTwo = plusOneCount;
+            modeThree = minusOneCount;
+        }
+        
+        
+        List<int> longestSubArray = new List<int>();
+
+        foreach (int n in values)
+        {
+            if (n == modeElement || n == modeTwo || n == modeThree)
+            {
+                longestSubArray.Add(n);
+            }
+        }
+        
+        return longestSubArray.Count();  
